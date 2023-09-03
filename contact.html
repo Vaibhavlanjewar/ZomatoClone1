@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Zomato</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #d57f73;
+        }
+
+        #contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f7f7f7;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        .submit-button {
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #c0392b;
+        }
+        /*Footer bar*/
+.footer-bar {
+	background-color: #F8F8F8;
+	padding-top: 50px;
+}
+
+.footer-bar .footer-lang {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.footer-bar .footer-lang img.footer-logo {
+	height: 28px;
+}
+
+.footer-bar .footer-lang a.lang-btn {
+	text-decoration: none;
+	font-size: 16px;
+	color: #1c1c1c;
+	padding: 8px 5px;
+	border: 1px solid #b5b5b5;
+	border-radius: 8px;
+	margin-right: 15px;
+}
+
+.footer-bar .footer-last-links {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.footer-bar .footer-last-links ul li{
+	list-style: none;
+	margin-bottom: 5px;
+}
+
+.footer-bar .footer-last-links h4.footer-list-title {
+	margin-bottom: 10px;
+	letter-spacing: 0.2rem;
+	font-size: 14px;
+}
+
+.footer-bar .footer-last-links ul li a {
+	text-decoration: none;
+	color: #696969;
+	font-size: 14px;
+}
+
+.footer-bar .footer-last-links ul li a:hover {
+	color: #1c1c1c;
+}
+
+.footer-bar .footer-last-links .footer-social-icons {
+	margin-bottom: 20px;
+}
+
+.footer-bar .footer-last-links .footer-social-icons a {
+	color: #1c1c1c;
+}
+
+.footer-bar .footer-last-links .footer-social-icons .fa-facebook,
+.footer-bar .footer-last-links .footer-social-icons .fa-twitter,
+.footer-bar .footer-last-links .footer-social-icons .fa-instagram {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.footer-bar .footer-copyright {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border-top: 1px solid #cfcfcf;
+}
+
+/*Mobile View*/
+@media(max-width: 500px) {
+	.showcase {
+		height: 500px;
+	}
+
+	.hero-text .search-bar {
+		width: 100%;
+	}
+
+	.search-3 {
+		display: none;
+	}
+
+	.order-cat {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.collections {
+	flex-direction: column;
+	justify-content: center;
+	}
+
+	.collection-grid {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.locals-grid {
+	grid-template-columns: repeat(1, 1fr);
+	}
+
+	.zom-app {
+		padding-left: 20px;
+		padding-right: 20px;
+		flex-direction: column;
+	}
+
+	.zom-app .zom-app-right {
+	margin-left: 20px;
+	width: 100%;
+	}
+
+	.restraunt-chains {
+	grid-template-columns: repeat(3, 1fr);
+	}
+
+    .footer-bar .footer-lang {
+        flex-direction: column;
+    }
+
+    .footer-bar .footer-lang .btn-lang-top {
+        margin-top: 20px;
+    }
+
+	.footer-links {
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.footer-bar .footer-last-links {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	}
+
+	.footer-bar .footer-last-links h4.footer-list-title {
+		margin-top: 20px;
+	}
+
+}
+    </style>
+</head>
+<body>
+    <div id="contact-container">
+        <h2>Contact Zomato</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="submit-button">Submit</button>
+
+        </form>
+
+    </div>
+    <section class="footer-bar">
+		<div class="container">
+			<div class="footer-lang">
+				<img class="footer-logo" src="images/zomato-black-logo.webp">
+				<div class="btn-lang-top">
+					<a class="lang-btn" href="#"><img src="images/india-flag.jpg" height="13px"> India <small><i class="fa fa-chevron-down"></i></small></a>
+					<a class="lang-btn" href="#"> <i class="fa fa-globe"></i> English <small><i class="fa fa-chevron-down"></i></small></a>
+				</div>
+			</div>
+			<div class="footer-last-links">
+				<ul>
+					<li><h4 class="footer-list-title">COMPANY</h4></li>
+					<li><a href="#">Who We Are</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Report Fraud</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Financial Information</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR FOODIES</h4></li>
+					<li><a href="#">Code of Conduct</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Blogger Help</a></li>
+					<li><a href="#">Mobile Apps</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR RESTAURANTS</h4></li>
+					<li><a href="#">Add Restaurant</a></li>
+					<li><a href="#">Claim your Listing</a></li>
+					<li><a href="#">Business App</a></li>
+					<li><a href="#">Restaurant Widgets</a></li>
+					<li><a href="#">Product Businesses</a></li>
+				</ul>
+				<ul>
+					<li><h4 class="footer-list-title">FOR YOU</h4></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+				<div>
+					<h4 class="footer-list-title">SOCIAL LINKS</h4>
+					<div class="footer-social-icons">
+						<a href="#"><i class="fab fa-facebook"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+					</div>
+					<div>
+						<img src="images/app-store1.webp" width="137px">
+						<img src="images/app-store2.webp" width="137px">
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p><small>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2021 © Zomato™ Ltd. All rights reserved.</small></p>
+			</div>
+		</div>
+		
+	</section>
+</body>
+</html>
